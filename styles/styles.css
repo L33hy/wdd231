@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+nav ul {
+    display: none;
+}
+
+nav .menu-icon {
+        display: block;
+    }
+}
