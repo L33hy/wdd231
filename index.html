@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a chamber of Commerce website, specially designed for a group business men settling in a certain locality">
     <meta name="author" content="Lehi Ita Daniel">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Chamber of Commerce website</title>
 </head>
 
 <body>
     <header>
-        <h1>Lehi Ita Daniel</h1>
         <nav>
-            <div class="menu-icon">
-                    <span>&#9776;</span> <!-- This represents a hamburger icon (three lines) -->
-                <ul>
+            <h1>Lehi Ita Daniel</h1>
+            <img id="header-image" src="./images/Picsart_24-05-19_15-25-37-047.jpg" alt="header picture" width="100">
+        </nav>
+        <nav>
+            <div class="navigation">
+                   <span>&#9776;</span> <!-- This represents a hamburger icon (three lines) -->
+                <ul class="nav-menue">
                     <li><a href="./home.html" class="active">Home</a></li>
                     <li><a href="./chamber.html">Chamber</a></li>
                     <li><a href="./github.html">GitHub Profile</li>
@@ -22,26 +26,18 @@
                 </ul>
             </div>
         </nav>
-
-        <script>
-            // Optional: JavaScript to toggle the menu visibility when the icon is clicked
-            const menuIcon = document.querySelector('.menu-icon');
-            const navUl = document.querySelector('nav ul');
-    
-            menuIcon.addEventListener('click', () => {
-                navUl.style.display = navUl.style.display === 'block' ? 'none' : 'block';
-            });
-        </script>
     </header>
 
     <main>
         <section>
-            <h3>Course Work</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="course-work">
+                <h2>Course-work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </section>
 
         <section>
@@ -56,7 +52,7 @@
                 <li>All</li>
                 <li>CSE</li>
                 <li>WDD</li>
-                <br>
+                <hr>
                 <li>CSE 110</li>
                 <li>WDD 130</li>
                 <li>CSE 111</li>
