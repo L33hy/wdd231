@@ -148,6 +148,8 @@ main {
     border: black;
     border-radius: 5px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 .course-outline {
@@ -163,4 +165,20 @@ hr {
 * .web-3-content {
     width: 100%;
     grid-column: span 4;
+}
+
+.classes-4, .classes-5, .classes-6, .classes-7, .classes-8, .classes-9 {
+    background-color: rgb(121, 31, 31);
+    padding: 2px 3rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.course-code {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
 }
