@@ -1,121 +1,166 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 200%;
-    gap: 20px; /* Space between the boxes */
-    padding: 20px;
-    justify-content: space-between; /* Space out the boxes */
-    
+:root {
+	--primary-color: #5e0b15;
+	--secondary-color: #90323d;
+	--tertiary-color: #ffffff;
+	--aside-color: #e7d915;
 }
 
-section[class="course-work"] {
-    display: flex;
-    position: relative;
-    background-color: #555;
-    width: 12rem;
-    height: 100%;
-}
-
-.course-work {
-    display: flex;
-    background-color: rgb(16, 109, 190);
-    /*width: 60%;
-    height: 300px;*/
-}
-
-div h2 {
-    justify-content: center;
-    background-color: black;
-    text-decoration: none;
-    color:aliceblue;
-    align-items: center;
-    border: 30px
-}
-/*.box_1 {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    gap: 20px; * Space between the boxes *
-    padding: 20px;
-    justify-content: space-between; * Space out the boxes *
-    background-color: rgb(28, 61, 206);
-}
-
-.box_2 {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    gap: 20px; * Space between the boxes *
-    padding: 20px;
-    justify-content: space-between; * Space out the boxes *
-    background-color: rgb(28, 61, 206);
-}
-
-.box_3 {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    gap: 20px; * Space between the boxes *
-    padding: 20px;
-    justify-content: space-between; * Space out the boxes *
-    background-color: rgb(28, 61, 206);
-}
-*/
-
-.navigation {
-    background-color: black;
-    padding-bottom: 10px;
-    
-}
-
-.nav-menue {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    
-}
-
-nav h1 {
-    display: flex;
-    background-color: blue;
-    align-items: center;
-    width: 100%;
-    height: 2em;
-    font-size: 35px;
-    padding: 20px;
-    align-content: center;
+* {
+    box-sizing: border-box;
     margin: 0;
-    text-indent: 70px;
-    justify-content: center;
-    position: relative;
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-li a:hover {
-    background-color: #555; /* Change background color on hover */
-    border-radius: 5px;
-}
-
-#header-image {
-    position: absolute;
-    top: 10px;
-    margin-left: 110px;
-    height: 105px;
+    padding: 0;
 }
 
 body {
-    
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--tertiary-color);
+    line-height: 1.6;
+}
+
+.aside {
+    color: var(--aside-color) !important;
+}
+
+header {
+    text-align: center;
+}
+
+.header-name {
+    background-color: var(--primary-color);
+    padding: 400px 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    margin: 0;
+    gap: 20px;
+}
+
+.header-name h1 {
+    font-size: 1.8rem;
+}
+
+.header-name span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+nav a {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 90%;
+}
+
+/* Main Content Styles */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 80%;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: black;
+}
+
+.course-work {
+    text-align: center;
+    background-color: rgb(54, 79, 189);
+    color: #fff
+}
+
+.box-1 {
+    display: block;
+}
+
+.toloria-madagascar {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+/*.box-3-content h3 {
+    font-size: 1.2rem;
+    text-align: justify;
+    flex: 3;
+}*/
+
+.toloria-madagascar {
+    background-color: rgb(54, 79, 189);;
+    text-align: center;
+    color: #fff;
+}
+
+.madagascar-image {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-content {
+    background-color: rgb(54, 79, 189);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.classes-1, .classes-2, .classes-3 {
+    display: inline-block;
+    background-color: black;
+    padding: 1px 3rem;
+    border: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course-outline {
+    margin: 8px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px auto;
+}
+
+* .web-3-content {
+    width: 100%;
+    grid-column: span 4;
 }

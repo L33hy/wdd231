@@ -6,65 +6,79 @@
     <meta name="description" content="This is a chamber of Commerce website, specially designed for a group business men settling in a certain locality">
     <meta name="author" content="Lehi Ita Daniel">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Chamber of Commerce website</title>
 </head>
-
 <body>
     <header>
-        <nav>
-            <h1>Lehi Ita Daniel</h1>
+        <div class="header-name">
+            <h1>Lehi Ita Daniel</h1> <span class="aside"></span>
             <img id="header-image" src="./images/Picsart_24-05-19_15-25-37-047.jpg" alt="header picture" width="100">
-        </nav>
+        </div>
         <nav>
             <div class="navigation">
+                <nav>
                    <span>&#9776;</span> <!-- This represents a hamburger icon (three lines) -->
-                <ul class="nav-menue">
-                    <li><a href="./home.html" class="active">Home</a></li>
-                    <li><a href="./chamber.html">Chamber</a></li>
-                    <li><a href="./github.html">GitHub Profile</li>
-                    <li><a href="./linkedin.html">LinkedIn</li>
-                </ul>
+                    <a href="./home.html" class="active">Home</a>
+                    <a href="./chamber.html">Chamber</a>
+                    <a href="./github.html">GitHub Profile</a>
+                    <a href="./linkedin.html">LinkedIn</a>
+                </nav>
             </div>
         </nav>
     </header>
-
     <main>
-        <section>
-            <div class="course-work">
-                <h2>Course-work</h2>
+        <section class="box box-1">
+            <div class="work">
+                <h2 class="course-work">Course Work</h2>
+            <div class="doted-lines">
                 <ul>
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
             </div>
+            </div>
         </section>
-
-        <section>
-            <h3>Toloria Madagascar</h3>
-            <img src="./images/" atl="">
+        <section class="box box-2">
+            <h3 class="toloria-madagascar">Toloria Madagascar</h3>
+            <img class="madagascar-image" src="./images/image-2.jpeg" atl="A picture of Nigeria" width="100px" length="100px">
             <p></p>
         </section>
-
-        <section>
-            <h3>Web and Computer Programming Certificate</h3>
-            <ul>
-                <li>All</li>
-                <li>CSE</li>
-                <li>WDD</li>
-                <hr>
-                <li>CSE 110</li>
-                <li>WDD 130</li>
-                <li>CSE 111</li>
-                <li>CSE 210</li>
-                <li>WDD 131</li>
-                <li>WDD 231</li>
-            </ul>
+        <section class="box box-3">
+            <div class="box-3-content">
+                <h3 class="web-content">Web and Computer Programming Certificate</h3>
+                <div class="course-outline">
+                    <div class="classes-1">
+                        <ul><li>All</li></ul>
+                    </div>
+                    <div class="classes-2">
+                        <ul><li>CSE</li></ul>
+                    </div>
+                    <div class="classes-3">
+                        <ul><li>WDD</li></ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+                 
+                </div>
+                    <ul>
+                        <li>CSE 110</li>
+                        <li>WDD 130</li>
+                        <li>CSE 111</li>
+                        <li>CSE 210</li>
+                        <li>WDD 131</li>
+                        <li>WDD 231</li>
+                    </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 🏝 Lehi Ita Daniel 🏝 Madagascar</p> 
+        <p>&copy; <Span id="currentyear"></Span> 🏝 Lehi Ita Daniel 🏝 Nigeria</p>
+        <p id="lastModified" class="aside"></p>
     </footer>
 </body>
 </html>
