@@ -162,7 +162,7 @@ hr {
     margin: 10px auto;
 }
 
-* .web-3-content {
+.web-3-content {
     width: 100%;
     grid-column: span 4;
 }
