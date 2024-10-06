@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, City, Country",
+      "phone": "123-456-7890",
+      "website": "https://companya.com",
+      "image": "companya-logo.png",
+      "level": "Gold"
+    },
+    {
+      "name": "Company B",
+      "address": "456 Oak St, City, Country",
+      "phone": "987-654-3210",
+      "website": "https://companyb.com",
+      "image": "companyb-logo.png",
+      "level": "Silver"
+    },
+    {
+        "name": "Company A",
+        "address": "123 Main St",
+        "phone": "555-555-5555",
+        "website": "https://companya.com",
+        "image": "companya.jpg",
+        "membershipLevel": 1
+    },
+    { 
+        "name": "Company B",
+        "address": "456 Elm St",
+        "phone": "555-555-5556",
+        "website": "https://companyb.com",
+        "image": "companyb.jpg",
+        "membershipLevel": 2
+    },    
+    {    
+        "name": "Company C",
+        "address": "789 Oak St",
+        "phone": "555-555-5557",
+        "website": "https://companyc.com",
+        "image": "companyc.jpg",
+        "membershipLevel": 3
+    },    
+    {    
+        "name": "Company D",
+        "address": "321 Pine St",
+        "phone": "555-555-5558",
+        "website": "https://companyd.com",
+        "image": "companyd.jpg",
+        "membershipLevel": 1
+    },    
+    {    
+        "name": "Company E",
+        "address": "901 Maple St",
+        "phone": "555-555-5559",
+        "website": "https://companye.com",
+        "image": "companye.jpg",
+        "membershipLevel": 2
+    },
+    {    
+        "name": "Company F",
+        "address":""
+    }    
+]
+  
