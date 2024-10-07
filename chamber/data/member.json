@@ -1,63 +1,61 @@
-[
-    {
-      "name": "Company A",
-      "address": "123 Main St, City, Country",
-      "phone": "123-456-7890",
-      "website": "https://companya.com",
-      "image": "companya-logo.png",
-      "level": "Gold"
-    },
-    {
-      "name": "Company B",
-      "address": "456 Oak St, City, Country",
-      "phone": "987-654-3210",
-      "website": "https://companyb.com",
-      "image": "companyb-logo.png",
-      "level": "Silver"
-    },
-    {
-        "name": "Company A",
-        "address": "123 Main St",
-        "phone": "555-555-5555",
-        "website": "https://companya.com",
-        "image": "companya.jpg",
-        "membershipLevel": 1
-    },
-    { 
-        "name": "Company B",
-        "address": "456 Elm St",
-        "phone": "555-555-5556",
-        "website": "https://companyb.com",
-        "image": "companyb.jpg",
-        "membershipLevel": 2
-    },    
-    {    
-        "name": "Company C",
-        "address": "789 Oak St",
-        "phone": "555-555-5557",
-        "website": "https://companyc.com",
-        "image": "companyc.jpg",
-        "membershipLevel": 3
-    },    
-    {    
-        "name": "Company D",
-        "address": "321 Pine St",
-        "phone": "555-555-5558",
-        "website": "https://companyd.com",
-        "image": "companyd.jpg",
-        "membershipLevel": 1
-    },    
-    {    
-        "name": "Company E",
-        "address": "901 Maple St",
-        "phone": "555-555-5559",
-        "website": "https://companye.com",
-        "image": "companye.jpg",
-        "membershipLevel": 2
-    },
-    {    
-        "name": "Company F",
-        "address":""
-    }    
-]
-  
+
+{
+    "organizations": [
+        {
+            "name": "Kholin Foundation",
+            "phone": "001112345",
+            "address": "Floor 1000, Urithiru, Roshar, Owerri",
+            "url": "http://the.oathbringer",
+            "img": "https://1.bp.blogspot.com/_7tumTwbKSn0/R6347iycQJI/AAAAAAAAAAk/8kZYM16SB7c/s320/flor2+png.png",
+            "level": "Gold"
+        },
+        {
+            "name": "La Rezorta",
+            "phone": "0201112345",
+            "address": "#14 Mbieri, Owerri",
+            "url": "http://la.rezorta",
+            "img": "http://bp1.blogger.com/_7tumTwbKSn0/R7AAQyycQKI/AAAAAAAAAAs/bfjB70uJyxQ/s1600/martinipng.png",
+            "level": "Gold"
+        },
+        {
+            "name": "Ubi Nde Nna",
+            "phone": "9901112345",
+            "address": "Nwaturuocha, Ikenegbu, Owerri",
+            "url": "http://the.ubir",
+            "img": "http://bp3.blogger.com/_7tumTwbKSn0/R7AApSycQLI/AAAAAAAAAA0/JZcK7a8DSGE/s1600/uvaspng.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Veritas Medicine",
+            "phone": "044442345",
+            "address": "Apartment 8, Obi drive, Owerri",
+            "url": "http://veritas.med",
+            "img": "http://bp1.blogger.com/_KGRQ22gnphU/R7k0xJ2GOYI/AAAAAAAAAFI/AKexYQNKDg8/s1600/estrella1png.png",
+            "level": "Gold"
+        },
+        {
+            "name": "The Wave",
+            "phone": "055512345",
+            "address": "72, Ikom Road, Owerri",
+            "url": "http://thewave.ride",
+            "img": "https://1.bp.blogspot.com/_7tumTwbKSn0/R8ElayycQNI/AAAAAAAAABE/BaeFDqvrL9I/s320/sports2png.png",
+            "level": "Bronze"
+        },
+        {
+            "name": "The Caring Place",
+            "phone": "11111111",
+            "address": "12 City scape district, Owerri",
+            "url": "http://wecare.place",
+            "img": "http://bp1.blogger.com/_7tumTwbKSn0/R8EkJiycQMI/AAAAAAAAAA8/ZjMpP_hZ2O4/s1600/sports1png.png",
+            "level": "Non-Profit"
+        },
+        {
+            "name": "Astronomers Guild",
+            "phone": "00000009",
+            "address": "155 Ukpa Drive, Owerri",
+            "url": "http://astonomer.guild",
+            "img": "http://bp0.blogger.com/_7tumTwbKSn0/R-ONfI33CDI/AAAAAAAAABs/bg-qEZ4Odz4/s1600/circulopng.png",
+            "level": "Bronze"
+        }
+    ]
+}
