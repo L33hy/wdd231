@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Directory">
-    <meta name="author" content="Lehi Ita Daniel">
-    <meta property="og:title" content="Chamber Directory">
+    <meta name="author" content="Gozie Benji Nwangele">
+    <meta name="description"
+        content="This is the Owerri City Chamber of Commerce Directory page. The purpose of this page is to exhibit the members of the chamber.">
+    <meta property="og:title" content="Lehi Ita Daniel - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/directory.html">
-    <title>Chamber Directory</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:description"
+        content="This is the Kaduna City Chamber of Commerce Directory-page. The purpose of this page is to exhibit the members of the chamber.">
+    <meta property="og:image" content="https://l33hy.github.io/wdd231/chamber/images/company-logo.webp">
+    <meta property="og:url" content="https://l33hy.github.io/wdd231/">
+    <title>Directory | Kaduna City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="script/directory.js">
-    <link rel="stylesheet" href="data/member.json">
+    <link rel="stylesheet" href="styles/spotligh.js">
+    <link rel="icon" href="favicon.ico" type="images/favicon-icon.cc">
 </head>
+
 <body>
     <header>
+        <img class="icon" height="150" width="150" src="images/company-logo.webp" alt="Chamber of Commerce Logo">
         <h1>Kaduna City Chamber of Commerce</h1>
-        <nav class="navigation navbar navbar-">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Directory</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Discover</a>
-                </li>
-            </ul>
-            <form class="search-form">
-                <input type="text" placeholder="Search for a business...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <a href="#" class="btn btn-primary">Sign Up</a>
-            <a href="#" class="btn btn-secondary">Login</a>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button"></button>
-            </div>
-            <div id="members" class="grid-view"></div>
-        </nav>
-        <button id="toggle-view">Toggle View</button>
     </header>
-    <main id="directory">
-        <!-- Member cards or list will be inserted here dynamically -->
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="dir-main">
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <article>
+            <h2>Business Directory</h2>
+            <div class="grid" id="article"></div>
+        </article>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> Chamber of Commerce</p>
-        <p>Last Modified: <span id="last-modified">10/05/2024 12:04:12</span></p>
+        <p id="copyright">&copy;<span id="year"></span> Lehi Ita Daniel. WDD 231 Project </p>
+        <p> Last modified: <span id="lastModified"></span></p>
+        <p>Contact us: kadunacommerce@gmail.com</p>
     </footer>
-    <script src="js/main.js"> </script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
+
 </html>
