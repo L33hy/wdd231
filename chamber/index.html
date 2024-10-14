@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lehi Ita Daniel">
+    <meta name="description"
+        content="This is the Kaduna City Chamber of Commerce Landing Page. It contains information about the weather in the city, and some upcoming events.">
+    <meta property="og:title" content="Owerri City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="I am Lehi Ita Daniel and this is my WDD 231 - Web Frontend Development Kaduna City Chamber of Commerce Home-page. The purpose of this page is to implement what I am learning by creating a Chamber of Commerce site.">
+    <meta property="og:image" content="https://mistshard.github.io/wdd230/images/owerri.jpg">
+    <meta property="og:url" content="https://mistshard.github.io/wdd230/">
+    <title>Lehi Ita Daniel - WDD 231 - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="icon" height="150" width="150"  src="images/myicon.webp" alt="Chamber of Commerce Logo">
+        <h1>Kaduna City Chamber of Commerce</h1>
+    </header>
+    <nav >
+        <button name="nav button" id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="index_main">
+        <img class="hero" width="2" height="1" src="images/hero.webp" alt="A hero banner with a picture of city traffic and welcoming words">
+        <section id="left-panel">
+            <h2>Company Spotlights</h2>
+                <div class="grid" id="article"></div>
+        </section>
+        <section id="middle-panel">
+            <a  id="btn" href="join.html">Become a Member!!</a>
+            <h2>Current Events</h2>
+                <p class="word">1. Business Resilience Awards: Celebrating the remarkable tenacity of local businesses that weathered storms and emerged
+                stronger than ever. Stay tuned for inspiring success stories.</p>
+                
+                <p class="word">2. Innovation Symposium: Our upcoming event will showcase the latest trends and groundbreaking innovations driving
+                economic growth in our community. Don't miss out on the opportunity to be at the forefront of change!</p>
+                
+                <p class="word">3. Shop Local Campaign: Join us in supporting our vibrant local business scene. Explore the hidden gems in our community
+                and discover the true essence of [Fictitious City].</p>
+                
+                <p class="word">4. Networking Extravaganza: Connect, collaborate, and grow your professional network at our upcoming networking event.
+                It's your chance to make valuable business connections.</p>
+        </section>
+        <section id="right-panel">
+            <h2>Weather Card</h2>
+            <h3>Current Weather</h3>
+            <p id="weather" class="weather"><img id="weather-icon" src=".." alt=".."><span id="figcaption"></span><span id="current-temp"></span> </p>
+            <h3>Three-day Forecast</h3>
+            <p id="weather1" class="weather"><img id="weather-icon1" src=".." alt=".."><span id="figcaption1"></span><span id="temp1"></span>
+            </p>
+            <p id="weather2" class="weather"><img id="weather-icon2" src=".." alt=".."><span id="figcaption2"></span><span id="temp2"></span>
+            </p>
+            <p id="weather3" class="weather"><img id="weather-icon3" src=".." alt=".."><span id="figcaption3"></span><span id="temp3"></span>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright">&copy;<span id="year"></span> Gozie Benji Nwangele. WDD 230 Project </p>
+        <p> Last modified: <span id="lastModified"></span></p>
+        <p>Contact us: owerricommerce@gmail.com</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/invite.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/getWeather.js"></script>
+</body>
+
+</html>
