@@ -180,9 +180,9 @@ footer {
 	content: "X";
 }
 
-.navigation li {
+/*.navigation li {
     display: none;
-}
+}*/
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
 	display: block;

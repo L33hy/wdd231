@@ -14,7 +14,7 @@ if (day === 1 || day === 2 || day === 3) {
     content.textContent = '❌';
 
     content.addEventListener('click', () => {
-        image.setAttribute('src', 'images/hero.webp');
+        image.setAttribute('src', 'images/hero-image-2.jpeg');
         image.setAttribute('alt', 'A hero banner with a picture of city traffic and welcoming words');
         content.setAttribute('id', 'remove');
     })

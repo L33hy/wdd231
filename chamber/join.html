@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lehi Ita Daniel">
+    <meta name="description"
+        content="This is the Owerri Chamber of Commerce Join page. It's purpose is to provide a way for new members to join the Chamber.">
+    <meta property="og:title" content="Lehi Ita Daniel - WDD 231 - Web Frontend Development I">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="This is the Kaduna City Chamber of Commerce Join page. It's purpose is to provide a way for new members to join the Chamber.">
+    <meta property="og:image" content="https://l33hy.github.io/wdd231/images/owerri.jpg">
+    <meta property="og:url" content="https://l33hy.github.io/wdd231/">
+    <title>Join | Kaduna City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img class="icon" height="150" width="150" src="images/company-logo.webp" alt="Chamber of Commerce Logo">
+        <h1>Kaduna City Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join-main">
+        <h2>Membership Form</h2>
+    
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+        
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required>
+        
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lname" required>
+        
+                <label for="title">Title or Position:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}">
+        
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+        
+                <label for="phone_number">Mobile Phone Number*</label>
+                <input type="tel" id="phone_number" name="phone_number" required>
+        
+                <label for="organization_name">Business/Organization Name*</label>
+                <input type="text" id="organization_name" name="organization_name" required>
+        
+                <label for="membership_level">Membership Level</label>
+                <select name="membership_level" id="membership_level">
+                    <option value="">Please Select a Level</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+        
+                <label for="organization_description">Business/Organization Description:</label>
+                <textarea name="organization_description" id="organization_description"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
+            </fieldset>
+        
+            <input id="btn" type="submit" value="Join The Chamber!">
+        </form>
+
+        <div id="join-table">
+            <table>
+                <caption>Membership Perks Comparison</caption>
+                <thead>
+                    <tr>
+                        <th id="header" colspan="4" scope="colgroup">Your Membership Perks</th>
+                    </tr>
+                    <tr>
+                        <th id="blank"></th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Training</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Advertisement</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Event Discounts</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Special Events</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer>
+        <p id="copyright">&copy;<span id="year"></span> Lehi Ita Daniel. WDD 231 Project </p>
+        <p> Last modified: <span id="lastModified"></span></p>
+        <p>Contact us: kadunacommerce@gmail.com</p>
+    </footer>
+    <script src="script/discover.js"></script>
+    <script src="script/directory.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/invite.js"></script>
+    <script src="script/spotlight.js"></script>
+    <script src="script/getWeather.js"></script>
+</body>
+
+</html>
