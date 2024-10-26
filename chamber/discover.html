@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lehi Ita Daniel">
+    <meta name="description"
+        content="The purpose of this page is to showcase the Kaduna Cty Chamber of Commerce">
+    <meta property="og:title" content="Lehi Ita Daniel - WDD 231 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="I am Lehi Ita Daniel and this is my WDD 231 - Web Frontend Development Kaduna City Chamber of Commerce Discover-page. The purpose of this page is to implement what I am learning by creating a Chamber of Commerce site.">
+    <meta property="og:image" content="https://l33hy.github.io/wdd231/chamber/images/hero-image-5">
+    <meta property="og:url" content="https://l33hy.github.io/wdd231/">
+    <title>Discover | Owerri Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img class="icon" height="150" width="150"  src="images/company-logo.webp" alt="Chamber of Commerce Logo">
+        <h1>Kaduna City Chamber of Commerce</h1>
+    </header>
+    <nav >
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="discover-sec" id="panel">
+            <div id="stats">
+                <h2>
+                    City Statistics
+                </h2>
+                <p>
+                    Here are some statistics about Kaduna city, Nigeria, as of 2024:
+                </p>
+                <ul>
+                    <li>Population: 983,000 (metro area)</li>
+                    <li>Area: 100 square kilometers (40 sq mi)</li>
+                    <li>Density: 9,830 people per square kilometer (25,460 people per square mile)</li>
+                    <li>GDP: $10.2 billion (PPP)</li>
+                    <li>Unemployment rate: 10.5%</li>
+                    <li>Major religions: Christianity (55%), Islam (45%)</li>
+                </ul>
+            </div>
+            <div id="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Kagoro Charity Foundation spelling bee competition Date: October 30, 2024
+                        Time: 12:20 PM</li>
+                    <li>Unleash conference Date: November 17-19, 2024
+                        Time: 3:00 PM</li>
+                    <li>Kaduna state 2024 Governorship election Date: November 11, 2024
+                        Time: 7:00 AM</li>
+                </ul>
+            </div>
+            <div id="visits">
+                <h2>Your Visits</h2>
+                <p><span id="message"></span></p>
+            </div>
+        </section>
+        <section class="discover-sec" id="middle">
+            <h2>Pictures</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/scape-small.webp">
+                    <img class="discover_img" src="images/scape-large.webp" alt="cityscape"  loading="lazy" width="2" height="1">
+                </picture>
+                <figcaption>The city view from the air</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/art-small.webp">
+                    <img class="discover_img" src="images/art-large.webp" alt="art"  loading="lazy" width="2" height="1">
+                </picture>
+                <figcaption>The city's rich art</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/resort-small.webp">
+                    <img class="discover_img" src="images/resort-large.webp" alt="resort" loading="lazy" width="2" height="1">
+                </picture>
+                <figcaption>The city resort</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/tech-small.webp">
+                    <img class="discover_img" src="images/tech-large.webp" alt="conference"  loading="lazy" width="2" height="1">
+                </picture>
+                <figcaption>Tech conference organized by the Chamber</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/office-small.webp">
+                    <img class="discover_img" src="images/office-large.webp" alt="office building"  loading="lazy" width="2"
+                        height="1">
+                </picture>
+                <figcaption>The Chamber's offices</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/barbecue-small.webp">
+                    <img class="discover_img" src="images/barbecue-large.webp" alt="barbecue"  loading="lazy" width="2"
+                        height="1">
+                </picture>
+                <figcaption>Barbecue</figcaption>
+            </figure>
+        </section>
+    </main>
+    <foot
+        <p id="copyright">&copy;<span id="year"></span> Lehi Ita Daniel. WDD 231 Project </p>
+        <p> Last modified: <span id="lastModified"></span></p>
+        <p>Contact us: kadunacommerce@gmail.com</p>
+    </footer>
+    <script src="script/discover.js"></script>
+    <script src="script/directory.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/invite.js"></script>
+    <script src="script/spotlight.js"></script>
+    <script src="script/getWeather.js"></script>
+</body>
+
+</html>
