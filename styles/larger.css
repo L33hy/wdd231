@@ -1,0 +1,51 @@
+/* Responsive Design Using Media Queries */
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .name-head {
+        font-size: 2rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul.open {
+        display: block;
+    }
+
+    .nav li {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr;
+    }
+    .card-3{
+        width: 100%;
+    }
+
+    .course-2 {
+        grid-template-columns: 1fr;
+    }
+    .all{
+        width: 90%;
+    }
+    .home{
+        margin-left: 5%;
+    }
+
+}

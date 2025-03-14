@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 - Course Home Page by Lehi Ita Daniel, Frontend Web Development, Html, CSS, JavaScript" />
+    <meta name="author" content="Lehi Ita Daniel" />
+
     <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Course Home Page</title>
+
+    <script src="./scripts/course.js" defer></script>
+    <script src="./scripts/date.js" defer></script>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo"></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
-    </div>
-
-    <div class="enclosure">
-        <div class="content">
-            <img src="./images/closeup-workers-doing-brainstorming-pitching-investment-strategies.jpg" alt="chamber of Commerce image" />
+    <header>
+        <div class="nav-bar">
+            <img src="./images/profile_photo.jpg" alt="Profile Photo">
+            <span class="name-head">Lehi Ita Daniels</span>
         </div>
+        <nav class="nav">
+            <button id="hamburger">&#9776;</button>
+            <ul id="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/lehi-daniel/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="home">Home</h1>
+        <div class="card-content">
+            <section class="cards card-1">
+                <h2 class="course-work">Course Work</h2>
+                <div class="list-style">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
 
-        <div class="home"><strong>Home</strong></div>
-    
-        <div class="whole-card">
-            <div class="card-name">
-                <div class="events">Events</div>
-                <div class="e-card">E-card</div>
-                <div class="current-weather">Current Weather</div>
-                <div class="c-weather">Current Weather</div>
-                <div class="weather-forecast">Weather Forecast</div>
-                <div class="w-forecast">Weather Forecast</div>
-            </div>
+            <section class="cards card-2">
+                <h2 class="course-work">Kaduna, Nigeria</h2>
+                <div class="country-card">
+                    <div class="card-photo">
+                        <img src="./images/kaduna-state.jpg" alt="A City in Kaduna State">
+                    </div>
+                    <figcaption>Kaduna State</figcaption>
+                </div>
+            </section>
 
-            <div class="buss-1">
-                <h2>Business 1</h2>
-                <p>Business Tag Line</p>
+            <section class="cards card-3">
+                <h2 class="card-title">Web and Computer Programming Certificate</h2>
+                <div class="cert">
+                    <div class="course">
+                        <div class="tip all-courses">All</div>
+                        <div class="tip cse-courses">CSE</div>
+                        <div class="tip wdd-courses">WDD</div>
+                    </div>
+                </div>
                 <hr>
-                <img src="image" alt="business card image" />
-                <p><strong>EMAIL</strong>: info@gmail.com</p>
-                <p><strong>PHONE</strong>: 800-555-123</p>
-                <p><strong>URL</strong>: mybusiness.com</p>
-            </div>
-            <div class="buss-1">
-                <h2>Business 1</h2>
-                <p>Business Tag Line</p>
-                <hr>
-                <img src="image" alt="business card image" />
-                <p><strong>EMAIL</strong>: info@gmail.com</p>
-                <p><strong>PHONE</strong>: 800-555-123</p>
-                <p><strong>URL</strong>: mybusiness.com</p>
-            </div>
-            <div class="buss-1">
-                <h2>Business 1</h2>
-                <p>Business Tag Line</p>
-                <hr>
-                <img src="image" alt="business card image" />
-                <p><strong>EMAIL</strong>: info@gmail.com</p>
-                <p><strong>PHONE</strong>: 800-555-123</p>
-                <p><strong>URL</strong>: mybusiness.com</p>
-            </div>
+                <p class="course-note">Total number of courses 12, each course should be 2 credits, making it a total of 24 credits.</p>
+                <div class="course-2">
+                    <div class="all">CSE 110</div>
+                    <div class="all">WDD 130</div>
+                    <div class="all">CSE 111</div>
+                    <div class="all color">CSE 210</div>
+                    <div class="all">WDD 131</div>
+                    <div class="all color">WDD 231</div>
+                </div>
+            </section>
         </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-address">
-            <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
-            <p>(223) 555-2300</p>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook icon" /></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter icon" /></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn icon" /></a>
-        </div>
-        <div class="description">
-            <p>WDD231 Class Project</p>
-            <p>Lehi Ita Daniel</p>
-            <p>&copy; 2025 Timbuktu Chamber of Commerce. All rights reserved.</p>
-            <p>Last Modification: </p>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Lehi Ita Daniel's. Nigeria</p>
+        <p id="lastmodified" class="aside"></p>
+    </footer>
 </body>
 </html>
