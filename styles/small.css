@@ -52,9 +52,10 @@ img {
 }
 
 .nav li a:hover {
-    background-color: #162b44fb;
+    background-color: #4d5968fb;
     color: #fff;
     padding: 8px;
+    border-radius: 5px;
 }
 
 main {
