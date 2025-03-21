@@ -1,0 +1,57 @@
+.directory-table {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.bus-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 20rem;
+    height: 25rem;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.business-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.business-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.img-bus-card {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.business-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.img-bus-card ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.img-bus-card ul li{
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}

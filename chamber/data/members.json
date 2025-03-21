@@ -1,0 +1,30 @@
+
+[
+	{
+		"name": "Colab Innovation Hub",
+		"address": "4 Barnawa Close, Barnawa, Kaduna, Nigeria",
+		"phone": "+234 815 555 6990",
+		"website": "http://colab.com.ng/",
+		"membership": 3,
+		"description": "A technology center fostering innovation and entrepreneurship.",
+		"image": "../images/colab-img.png"
+	},
+	{
+		"name": "Blue Camel Energy Ltd",
+		"address": "45 Kakuri Industrial Layout, Barnawa, Kaduna, Nigeria",
+		"phone": "+234 803 326 4484",
+		"website": "https://bluecamel.energy/",
+		"image": "../images/blue-camel.png",
+		"membership": 2,
+		"description": "Sustainable energy and agriculture solutions."
+	},
+	{
+		"name": "Body Magic Gym Barnawa",
+		"address": "15, Kubani Crescent, Barnawa, Kaduna, Nigeria",
+		"phone": "+234 703 788 5732",
+		"website": "https://domynate.com/gym/body-magic-gym/",
+		"image": "../images/body-magic.png",
+		"membership": 3,
+		"description": "A premium fitness club offering a variety of training programs."
+	}
+]

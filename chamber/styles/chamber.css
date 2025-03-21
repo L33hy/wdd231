@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #5c4242;
+    --color-secondary: #ffff;
+    --color-tertiary: #9c6d6d;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: var(--color-primary);
+    display: flex;
+    height: 5rem;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+ul a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero-section {
+    width: 100%;
+    margin-top: 0;
+}
+
+.hero-section img {
+    justify-content: center;
+    width: 95%;
+    max-width: 1110px; /*added max width to prevent excessively large images on larger screens */
+    height: 32rem; /*maintain aspect ratio*/
+    object-fit: cover;
+     /*remove inline spacing*/
+    margin-top: 0 auto; /* Center the image horizontally */
+}
+
+section {
+    margin: 5rem;
+}
+
+.home {
+   background-color: #fff; 
+   color: #000;
+   margin-left: 5px;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+h2 {
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.event {
+    width: 23rem;
+    height: 20rem;
+    background-color: #ccc;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.members {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.8rem;
+}
+
+div img {
+    width: 45px;
+    height: auto;
+    color: #fff;
+    margin: .5rem;
+}

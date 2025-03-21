@@ -1,0 +1,73 @@
+.weather-icon-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon-temp img {
+    width: 4rem;
+    height: auto;
+}
+
+.temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.weather-info {
+    margin: 1rem 5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.high-temp {
+    font-weight: 100;
+    padding-left: 4.7rem;
+}
+
+.low-temp {
+    font-weight: 100;
+    padding-left: 5rem;
+}
+
+.humidity {
+    font-weight: 100;
+    padding-left: 2.5rem;
+}
+
+.sunrise {
+    font-weight: 100;
+    padding-left: 3.6rem;
+}
+
+.sunset {
+    font-weight: 100;
+    padding-left: 4rem;
+}
+
+.forecast-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.day-name {
+    font-weight: bold;
+}

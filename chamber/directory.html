@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Barnawa Chamber of Commerce Directory" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://l33hy.github.io/wdd231/chamber/images/chamber-logo.svg" />
+	<meta property="og:url" content="https://l33hy.github.io/wdd231/chamber/directory.html" />
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/chamber.css" />
+    <link rel="stylesheet" href="./styles/weather.css" />
+    <link rel="stylesheet" href="./styles/members.css" />
+    
+    
+    <script src="./scripts/main.js" defer></script>
+	<script src="./scripts/directory.js" defer></script>
+
+    <title>Barnawa City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/chamber of commerce logo.png" alt="Barnawa City Chamber of Commerce Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="hamburger">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <img src="./images/room-used-official-event.jpg" alt="Barnawa City Commerce Directory" loading="lazy">
+                <h1>Barnawa City Chamber of Commerce</h1>
+                <p>We are a leading provider of modern and sustainable commerce solutions.</p>
+                <button href="#" class="cta-btn">Discover Our Services</button>
+            <p class="home">Home</p>
+        </section>
+
+        <section class="directory">
+            <div class="card-container">
+                <h2>Events</h2>
+                <div class="event"></div>
+            </div>
+            <div class="card-container">
+                <h2>Current-weather</h2>
+                <div class="event current-weather"></div>
+            </div>
+            <div class="card-container">
+                <h2>Weather-forecast</h2>
+                <div class="event forecast"></div>
+            </div>
+        
+        </section>
+        <div class="members">Featured Members</div>
+        <section class="directory-table">
+            <div class="card-content-1 bus-card" id="business-card-1">
+                <p class="business-name"></p>
+                <p class="business-description"></p>
+                <div class="img-bus-card">
+                    <img src="#" alt="Business Image" class="business-image">
+                    <ul>
+                        <li class = "business-address"></li>
+                        <li class = "business-phone"></li>
+                        <li class= "business-website"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content-1 bus-card" id="business-card-2">
+                <p class="business-name"></p>
+                <p class="business-description"></p>
+                <div class="img-bus-card">
+                    <img src="#" alt="Business Image" class="business-image">
+                     <ul>
+                        <li class = "business-address"></li>
+                        <li class = "business-phone"></li>
+                        <li class= "business-website"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content-1 bus-card" id="business-card-3">
+                <p class="business-name"></p>
+                <p class="business-description"></p>
+                <div class="img-bus-card">
+                    <img src="#" alt="Business Image" class="business-image">
+                     <ul>
+                        <li class = "business-address"></li>
+                        <li class = "business-phone"></li>
+                        <li class= "business-website"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- <main>
+			<section class="member-directory">
+				<h1>Directory</h1>
+				<div class="toggle-buttons">
+					<span class="material-symbols-outlined icon"> grid_view </span>
+					<span class="material-symbols-outlined icon">view_list</span>
+				</div>
+				<section id="members-container"></section>
+			</section>
+		</main> -->
+
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Barnawa City Chamber of Commerce</p>
+            <p>123 Main Stree, Kaduna, Nigeria</p>
+            <p>info@barnawachamber.com</p>
+            <p>Phone: +234 816 0980 287</p>
+        </div>
+        <div class="social-media">
+            <a href="facebook.com"><img src="./images/facebook.png" alt="facebook"></a>
+            <a href="linkedin.com"><img src="./images/linkedin.png" alt="linkedin"></a>
+            <a href="twitter.com"><img src="./images/twitter.png" alt="twitter"></a>
+        </div>
+        <div class="terms-conditions">
+            <p>WDD231 Class Project</p>
+            <p>Lehi Ita Daniel</p>
+            <p>&copy;<span id="currentyear"></span> Barnawa City Chamber of Commerce</p>
+            <p id="lastmodified" class="aside"></p>
+        </div>
+    </footer>
+</body>
+</html>
