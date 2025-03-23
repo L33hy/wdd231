@@ -10,12 +10,12 @@
     --color-tertiary: #9c6d6d;
 }
 
-/* head {
+head {
     overflow-x: hidden;
-} */
+}
 
 .navbar {
-    display: none;
+    display: flex;
     height: 5rem;
     background-color: var(--color-primary);
 }
@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-links {
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
