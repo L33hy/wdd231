@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .directory-table {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 0 auto;
     justify-content: center;
@@ -13,8 +19,8 @@
     border-radius: 8px;
     width: 20rem;
     height: 25rem;
-    padding: 15px;
-    margin-bottom: 20px;
+    text-align: center;
+    /* padding: 0 15px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -25,33 +31,56 @@
 }
 
 .business-name {
-    font-size: 1.2em;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .business-description {
-    font-size: 0.9em;
-    color: #555;
+    font-size: 1rem;
     margin-bottom: 15px;
 }
 
-.img-bus-card {
+/* .img-bus-card img.business-image {
+    max-width: 100%;
+    height: auto;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+} */
+
+.colab {
+    padding-top: 0;
+    cursor: pointer;
 }
 
 .business-image {
-    max-width: 100%;
+    width: 5rem;
     height: auto;
-    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
 }
+
 .img-bus-card ul{
-    padding: 0;
-    margin: 0;
     list-style: none;
+    line-height: 2rem;
 }
+
 .img-bus-card ul li{
-    font-size: 0.8em;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin: 6px;
+}
+
+.website-button {
+    padding: 8px;
+    background-color: #247027;
+    border: 1px solid #3e3c3c;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.website-button:hover {
+    background-color: #208d24;
+    border-color: #031804;
 }

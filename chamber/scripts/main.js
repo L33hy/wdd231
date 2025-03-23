@@ -1,10 +1,19 @@
-// Function to fetch and display weather
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastmodified").textContent = `Last modified: ${document.lastModified}`;
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.querySelector('.navbar');
+
+    hamburger.addEventListener('click', function() {
+        navbar.classList.toggle('open');
+        if (navbar.classList.contains('open')) {
+            hamburger.textContent = 'X';
+        } else {
+            hamburger.textContent = '☰';
+        }
+    });
 
 async function getWeather() {
     const apiKey = '278286a1cca556be7de32b0aa2f565ea'; // Replace with your actual API key from OpenWeatherMap
-    const location = 'Kaduna,NG'; // Specify the location (Kaduna, Nigeria)
+    const location = 'kaduna,NG'; // Specify the location (Kaduna, Nigeria)
     const units = 'imperial'; // Use Fahrenheit
 
     const currentWeatherContainer = document.querySelector('.current-weather');
@@ -32,7 +41,8 @@ async function getWeather() {
                 <p class="temp">${main.temp}°F</p>
             </div>
             <div class="weather-des">
-                <p class="weather-description">${weather[0].description}</p>
+                <p class="weather-description">${weather[0].description} <span class="location-name">${name}</span></p>
+                <p </p>
             </div>
                 <p class="weather-info">High: <span class="high-temp">${main.temp_max}°F</span></p>
                 <p class="weather-info">Low: <span class="low-temp">${main.temp_min}°F</span></p>
@@ -42,7 +52,7 @@ async function getWeather() {
         `;
 
         // Display 3-day forecast
-        let forecastHTML = '<h3 class="forecast-title">4-Days Forecast</h3>';
+        let forecastHTML = '<h3 class="forecast-title">5-Days Forecast</h3>';
         // Filter the forecast data to get daily forecasts (around noon)
         const dailyForecasts = forecastData.list.filter(item => item.dt_txt.includes('12:00:00'));
 

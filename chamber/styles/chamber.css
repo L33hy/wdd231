@@ -10,14 +10,14 @@
     --color-tertiary: #9c6d6d;
 }
 
-body {
+/* head {
     overflow-x: hidden;
-}
+} */
 
 .navbar {
-    background-color: var(--color-primary);
-    display: flex;
+    display: none;
     height: 5rem;
+    background-color: var(--color-primary);
 }
 
 .logo img {
@@ -33,21 +33,51 @@ ul a {
 }
 
 nav {
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     gap: 2.5rem;
+    font-weight: bold;
 }
 
-.hamburger {
+.nav-links li a {
+    font-size: 1.1rem;
+}
+
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a:hover::after {
+    width: 90%;
+}
+
+.nav-links li a::after {
+    background-color: #fff;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+
+#hamburger {
     display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    /* background: var(--color-primary); */
+    padding: .3rem;
+    margin-left: .5rem;
 }
 
 .hero-section {
@@ -57,6 +87,7 @@ nav {
 
 .hero-section img {
     justify-content: center;
+    position: relative;
     width: 95%;
     max-width: 1110px; /*added max width to prevent excessively large images on larger screens */
     height: 32rem; /*maintain aspect ratio*/
@@ -65,14 +96,41 @@ nav {
     margin-top: 0 auto; /* Center the image horizontally */
 }
 
+.cta-btn {
+    position: absolute;
+    top: 90%;
+    right: 115px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3e3c3c;
+    background-color: #3fe244;
+    color: #3f28e6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #1fa123;
+    color: #0c0303
+}
+
+.caption {
+    margin: 1rem;
+}
+
 section {
-    margin: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
 }
 
 .home {
    background-color: #fff; 
    color: #000;
-   margin-left: 5px;
    font-size: 2rem;
    font-weight: bold;
 }
@@ -90,6 +148,7 @@ h2 {
 .directory {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 0 auto;
     justify-content: center;
@@ -99,9 +158,12 @@ h2 {
 .event {
     width: 23rem;
     height: 20rem;
-    background-color: #ccc;
+    border: 1px solid #ddd;
+    background-color: ffffff;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .members {
@@ -127,5 +189,5 @@ div img {
     width: 45px;
     height: auto;
     color: #fff;
-    margin: .5rem;
+    margin: .3rem;
 }
