@@ -11,6 +11,7 @@
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/directory.css" />
     <link rel="stylesheet" href="./styles/chamber.css" />
     <link rel="stylesheet" href="./styles/weather.css" />
     <link rel="stylesheet" href="./styles/members.css" />
@@ -19,6 +20,7 @@
     
     <script src="./scripts/main.js" defer></script>
 	<script src="./scripts/directory.js" defer></script>
+	<script src="./scripts/members.js" defer></script>
 
     <title>Barnawa City Chamber of Commerce</title>
 </head>
@@ -40,84 +42,18 @@
             
         </nav>
     </header>
+
     <main>
-        <section class="hero-section">
-            <img src="./images/room-used-official-event.jpg" alt="Barnawa City Commerce Directory" loading="lazy">
-            <div class="caption">    
-                <h1>Barnawa City Chamber of Commerce</h1>
-                <p>We are a leading provider of modern and sustainable commerce solutions.</p>
+        <section class="member-directory">
+            <h1>Directory</h1>
+            <div class="toggle-buttons">
+                <span class="material-symbols-outlined icon"> grid_view </span>
+                <span class="material-symbols-outlined icon">view_list</span>
             </div>
-            <button href="#" class="cta-btn">Discover Our Services</button>
-            <p class="home">Home</p>
+            <section id="members-container"></section>
         </section>
-
-        <section class="directory">
-            <div class="card-container">
-                <h2>Events</h2>
-                <div class="event"></div>
-            </div>
-            <div class="card-container">
-                <h2>Current-weather</h2>
-                <div class="event current-weather"></div>
-            </div>
-            <div class="card-container">
-                <h2>Weather-forecast</h2>
-                <div class="event forecast"></div>
-            </div>
-        
-        </section>
-        <div class="members">Featured Members</div>
-        <section class="directory-table">
-            <div class="card-content-1 bus-card" id="business-card-1">
-                <img src="#" class="business-image colab" alt="Business Image" >
-                <p class="business-name"></p>
-                <p class="business-description"></p>
-                <div class="img-bus-card">  
-                    <ul>
-                        <li class = "business-address"></li>
-                        <li class = "business-phone"></li>
-                        <li><button class= "website-button" data-website="">Visit Website</button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-content-1 bus-card" id="business-card-2">
-                <img src="#" class="business-image" alt="Business Image" >
-                <p class="business-name"></p>
-                <p class="business-description"></p>
-                <div class="img-bus-card">
-                     <ul>
-                        <li class = "business-address"></li>
-                        <li class = "business-phone"></li>
-                        <li><button class= "website-button" data-website="">Visit Website</button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-content-1 bus-card" id="business-card-3">
-                <img src="#" class="business-image" alt="Business Image" >
-                <p class="business-name"></p>
-                <p class="business-description"></p>
-                <div class="img-bus-card">
-                     <ul>
-                        <li class = "business-address"></li>
-                        <li class = "business-phone"></li>
-                        <li><button class= "website-button" data-website="">Visit Website</button></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- <main>
-			<section class="member-directory">
-				<h1>Directory</h1>
-				<div class="toggle-buttons">
-					<span class="material-symbols-outlined icon"> grid_view </span>
-					<span class="material-symbols-outlined icon">view_list</span>
-				</div>
-				<section id="members-container"></section>
-			</section>
-		</main> -->
-
     </main>
+
     <footer>
         <div class="contact-info">
             <p>Barnawa City Chamber of Commerce</p>

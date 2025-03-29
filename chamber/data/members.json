@@ -25,5 +25,41 @@
         "image": "https://raw.githubusercontent.com/L33hy/wdd231/main/chamber/images/body-magic.png",
         "membership": 3,
         "description": "A premium fitness club offering a variety of training programs."
-    }
+    },
+    {
+		"name": "Luxury Interiors Ltd",
+		"address": "678 Style Avenue, Abuja, Nigeria",
+		"phone": "+234 806 567 8901",
+		"website": "http://luxuryinteriors.com",
+		"image": "https://images.squarespace-cdn.com/content/v1/59f1a50f017db20ce43f3f36/1509977652604-05QS7T5F4PSUZE107GGW/Website+Navigation+Logo+Dark.png?format=1500w",
+		"membership": 1,
+		"description": "Specializes in high-end interior design and furnishing."
+	},
+    {
+		"name": "Sunny Bakers",
+		"address": "101 Sunshine Avenue, Abuja, Nigeria",
+		"phone": "+234 809 789 0123",
+		"website": "http://sunnybakers.com",
+		"image": "https://sunking.com/wp-content/uploads/2017/12/Sun-King-Logo-1.png",
+		"membership": 3,
+		"description": "Baking the freshest breads, pastries, and cakes in Abuja."
+	},
+    {
+		"name": "Elite Transport Services",
+		"address": "12 Mobility Drive, Abuja, Nigeria",
+		"phone": "+234 808 890 1234",
+		"website": "http://elitetransport.com",
+		"image": "https://elitetransportservice.net/wp-content/uploads/2022/03/elitelogoSITE2.png",
+		"membership": 1,
+		"description": "Provides executive and corporate transportation solutions."
+	},
+    {
+		"name": "Bloom Landscaping",
+		"address": "555 Garden Lane, Abuja, Nigeria",
+		"phone": "+234 809 101 2345",
+		"website": "http://bloomlandscaping.com",
+		"image": "https://www.bloomlandscaping.com/media/themes/bloom-bones/library/images/bloom-logo.png",
+		"membership": 2,
+		"description": "Professional landscaping and gardening services."
+	}
 ]
