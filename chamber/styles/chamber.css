@@ -70,14 +70,15 @@ nav {
     transition: width 0.3s ease;
 }
 
-#hamburger {
+.hamburger {
     display: none;
     font-size: 2rem;
     cursor: pointer;
     border: none;
-    /* background: var(--color-primary); */
+    background: var(--color-primary);
     padding: .3rem;
     margin-left: .5rem;
+
 }
 
 .hero-section {

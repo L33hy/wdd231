@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.querySelector('.navbar');
+    const hamburger = document.querySelector('#hamburger');
+    const navbar = document.querySelector('#navbar');
 
     hamburger.addEventListener('click', function() {
-        navbar.classList.toggle('open');
+        navbar.classList.toggle('open');    
         if (navbar.classList.contains('open')) {
+            // navbar.classList.add('open');
             hamburger.textContent = 'X';
         } else {
             hamburger.textContent = '☰';
+            // navbar.classList.remove('open');
         }
     });
 
