@@ -2,21 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
+    flex-wrap: wrap;
 }
 
 .weather-icon-temp img {
-    width: 4rem;
+    width: 3rem;
     height: auto;
 }
 
 .temp {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .weather-description {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
