@@ -93,7 +93,7 @@ nav {
     max-width: 1110px; 
     height: 32rem;
     object-fit: cover;
-    margin-top: 0 auto;
+    /* margin-top: 0 auto; */
 }
 
 .cta-btn {
@@ -159,7 +159,7 @@ h2 {
     width: 23rem;
     height: 20rem;
     border: 1px solid #ddd;
-    background-color: ffffff;
+    background-color: #ffffff;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

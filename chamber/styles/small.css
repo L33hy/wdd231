@@ -25,9 +25,9 @@
 
     .nav-links.open {
         flex-direction: column;
-        justify-content: justify;
+        justify-content: center;
         width: 100%;
-        transition: ease-in-out 0.3;
+        transition: all 0.3s ease-in-out;
     }
 
     .nav-links li {
