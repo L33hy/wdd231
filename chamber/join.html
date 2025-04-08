@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Barnawa Chamber of Commerce Directory" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://l33hy.github.io/wdd231/chamber/images/chamber-logo.svg" />
+	<meta property="og:url" content="https://l33hy.github.io/wdd231/chamber/directory.html" />
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/join.css" />
+    <link rel="stylesheet" href="./styles/chamber.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+
+    <script src="./scripts/general.js" defer></script>
+	<script src="./scripts/join.js" defer></script>
+
+    <title>Barnawa City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="hamburger">&#9776;</button> 
+        <!-- <button class="close-icon">&#9776;</button> -->
+            <div class="logo">
+                <img src="./images/chamber of commerce logo.png" alt="Barnawa City Chamber of Commerce Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <main class="container">
+        <div class="form-heading">
+            <h1>Become a Member</h1>
+            <p>
+                Join the Abuja Chamber of Commerce to gain access to exclusive events,
+                networking opportunities, and community initiatives.
+            </p>
+        </div>
+
+        <section class="container">
+            <form method="get" action="thankyou.html">
+                <label for="firstName"
+                    >First Name:
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                        autocomplete="given-name"
+                        title="Enter your first name"
+                        placeholder="Inpute First Name"
+                    />
+                </label>
+
+                <label for="lastName"
+                    >Last Name:
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                        autocomplete="family-name"
+                        title="Enter your last name"
+                        placeholder="Inpute Last Name"
+                    />
+                </label>
+
+                <label for="orgTitle"
+                    >Organizational Title:
+                    <input
+                        type="text"
+                        id="orgTitle"
+                        name="orgTitle"
+                        autocomplete="organization-title"
+                        title="Enter your organizational title"
+                        pattern="[A-Za-z\s\-]{7,}"
+                    />
+                </label>
+
+                <label for="email"
+                    >Email Address:
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        title="Enter your email address"
+                        placeholder="example@domain.com"
+                    />
+                </label>
+
+                <label for="mobile"
+                    >Mobile Phone Number:
+                    <input
+                        type="tel"
+                        id="mobile"
+                        name="mobile"
+                        required
+                        autocomplete="tel"
+                        title="Enter your mobile phone number"
+                    />
+                </label>
+
+                <label for="organization"
+                    >Organization Name:
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        required
+                        autocomplete="organization"
+                        title="Enter your organization's name"
+                    />
+                </label>
+
+                <!-- Membership Level Selection -->
+                <fieldset>
+                    <legend>Select Membership Level</legend>
+                    <label>
+                        <input
+                            type="radio"
+                            name="membershipLevel"
+                            value="NP Membership"
+                            required
+                        />
+                        Non-profit Membership
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="membershipLevel"
+                            value="Bronze Membership"
+                        />
+                        Bronze Membership
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="membershipLevel"
+                            value="Silver Membership"
+                        />
+                        Silver Membership
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="membershipLevel"
+                            value="Gold Membership"
+                        />
+                        Gold Membership
+                    </label>
+                </fieldset>
+
+                <label for="orgDescription"
+                    >Organization Description:
+                    <textarea
+                        id="orgDescription"
+                        name="orgDescription"
+                        title="Describe your organization"
+                    ></textarea>
+                </label>
+
+                <input type="submit" id="timestamp" name="timestamp" />
+
+                <input type="submit" value="Submit Application" />
+            </form>
+
+            <section id="membershipCards">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <a href="#" class="more-info" data-modal="npModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <a href="#" class="more-info" data-modal="bronzeModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <a href="#" class="more-info" data-modal="silverModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <a href="#" class="more-info" data-modal="goldModal">More Info</a>
+                </div>
+            </section>
+        </section>
+
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="npModal">❌</span>
+                <h2>Non Profit Membership Benefits</h2>
+                <p>
+                    Access to non-profit events, networking opportunities, and community
+                    outreach programs.
+                </p>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="bronzeModal">❌</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>
+                    Includes basic event access, directory listing, and participation in
+                    local initiatives.
+                </p>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="silverModal">❌</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>
+                    All Bronze benefits plus discounted event tickets and marketing
+                    support.
+                </p>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="goldModal">❌</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>
+                    All Silver benefits plus premium advertising, exclusive events, and
+                    priority support.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Barnawa City Chamber of Commerce</p>
+            <p>123 Main Stree, Kaduna, Nigeria</p>
+            <p>info@barnawachamber.com</p>
+            <p>Phone: +234 816 0980 287</p>
+        </div>
+        <div class="social-media">
+            <a href="facebook.com"><img src="./images/facebook.png" alt="facebook"></a>
+            <a href="linkedin.com"><img src="./images/linkedin.png" alt="linkedin"></a>
+            <a href="twitter.com"><img src="./images/twitter.png" alt="twitter"></a>
+        </div>
+        <div class="terms-conditions">
+            <p>WDD231 Class Project</p>
+            <p>Lehi Ita Daniel</p>
+            <p>&copy;<span id="currentyear"></span> Barnawa City Chamber of Commerce</p>
+            <p id="lastmodified" class="aside"></p>
+        </div>
+    </footer>
+</body>
+</html>
