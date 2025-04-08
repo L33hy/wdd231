@@ -7,7 +7,7 @@
 :root {
     --color-primary: #5c4242;
     --color-secondary: #ffff;
-    --color-tertiary: #9c6d6d;
+    --color-tertiary: #247000;
 }
 
 head {
@@ -101,8 +101,8 @@ nav {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #3e3c3c;
-    background-color: #3fe244;
-    color: #3f28e6;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;

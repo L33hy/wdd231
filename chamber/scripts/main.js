@@ -81,3 +81,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the function when the page loads
     getWeather();
 });
+

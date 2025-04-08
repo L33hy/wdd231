@@ -50,3 +50,78 @@
         })
         .catch(error => console.error('Error fetching directory data:', error));
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const spotlightContainer = document.querySelector('.spotlight-container');
+
+    async function fetchAndDisplaySpotlights() {
+        try {
+            const response = await fetch('./data/members.json');
+            const members = await response.json();
+
+            if (!members || members.length < 3) {
+                spotlightContainer.innerHTML = '<p>Not enough members to display spotlights.</p>';
+                return;
+            }
+
+            // Filter for Gold or Silver members (membership level 2 or 3)
+            const featuredMembers = members.filter(member => member.membership === 2 || member.membership === 3);
+
+            if (featuredMembers.length < 3) {
+                // If not enough featured members, just pick any 3 randomly
+                shuffleArray(members);
+                displayRandomMembers(members.slice(0, 3));
+            } else {
+                // Randomly select 3 featured members
+                shuffleArray(featuredMembers);
+                displayRandomMembers(featuredMembers.slice(0, 3));
+            }
+
+        } catch (error) {
+            console.error('Error fetching or displaying spotlight members:', error);
+            spotlightContainer.innerHTML = '<p>Failed to load spotlight members.</p>';
+        }
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    function displayRandomMembers(selectedMembers) {
+        spotlightContainer.innerHTML = ''; // Clear previous content
+        selectedMembers.forEach(member => {
+            const card = document.createElement('div');
+            card.classList.add('spotlight-card');
+
+            const image = document.createElement('img');
+            image.src = member.image;
+            image.alt = `${member.name} Logo`;
+            image.onerror = function(){
+                this.src = "./images/placeholder.jpg"; // Placeholder if image fails
+            };
+
+            const name = document.createElement('h3');
+            name.textContent = member.name;
+
+            const description = document.createElement('p');
+            description.textContent = member.description;
+
+            const websiteLink = document.createElement('a');
+            websiteLink.href = member.website;
+            websiteLink.textContent = 'Visit Website';
+            websiteLink.target = '_blank';
+
+            card.appendChild(image);
+            card.appendChild(name);
+            card.appendChild(description);
+            card.appendChild(websiteLink);
+
+            spotlightContainer.appendChild(card);
+        });
+    }
+
+    fetchAndDisplaySpotlights();
+});
