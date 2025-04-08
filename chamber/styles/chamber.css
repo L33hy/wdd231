@@ -90,11 +90,10 @@ nav {
     justify-content: center;
     position: relative;
     width: 95%;
-    max-width: 1110px; /*added max width to prevent excessively large images on larger screens */
-    height: 32rem; /*maintain aspect ratio*/
+    max-width: 1110px; 
+    height: 32rem;
     object-fit: cover;
-     /*remove inline spacing*/
-    margin-top: 0 auto; /* Center the image horizontally */
+    margin-top: 0 auto;
 }
 
 .cta-btn {

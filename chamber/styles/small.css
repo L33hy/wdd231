@@ -15,7 +15,7 @@
     .navbar.open ul {
         display: block;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform: translateX(0); /* Start at its normal position */
+        transform: translateX(0);
         opacity: 1;
     }
 
@@ -38,23 +38,4 @@
     .cta-btn {
         right: 180px;
     }
-
-    /* .nav-links li {
-		max-height: 0;
-		overflow: hidden;
-		flex-direction: column;
-		align-items: center;
-		position: absolute;
-		background-color: var(--primary-color);
-		width: 100%;
-		top: 5.677rem;
-		right: 0;
-		transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-		opacity: 0;
-	}
-
-    .nav-links li {
-        max-height: 200px;
-        opacity: 1;
-    } */
 }
