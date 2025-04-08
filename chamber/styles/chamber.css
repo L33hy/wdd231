@@ -88,16 +88,14 @@ nav {
 
 .hero-section img {
     justify-content: center;
-    position: relative;
     width: 95%;
     max-width: 1110px; 
     height: 32rem;
     object-fit: cover;
-    /* margin-top: 0 auto; */
+    margin-top: 2rem;
 }
 
 .cta-btn {
-    position: absolute;
     top: 90%;
     right: 115px;
     padding: 10px;
@@ -126,7 +124,8 @@ section {
 }
 
 h1 {
-    margin: 0;
+    margin: 15px;
+    text-align: center;
 }
 
 .home {
