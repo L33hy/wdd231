@@ -10,6 +10,10 @@
 
     <link rel="icon" href="favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/join.css" />
     <link rel="stylesheet" href="./styles/chamber.css" />
@@ -59,7 +63,7 @@
                         required
                         autocomplete="given-name"
                         title="Enter your first name"
-                        placeholder="Inpute First Name"
+                        placeholder="Input First Name"
                     />
                 </label>
 
@@ -72,19 +76,19 @@
                         required
                         autocomplete="family-name"
                         title="Enter your last name"
-                        placeholder="Inpute Last Name"
+                        placeholder="Input Last Name"
                     />
                 </label>
 
-                <label for="orgTitle"
+                <label for="title"
                     >Organizational Title:
                     <input
                         type="text"
-                        id="orgTitle"
-                        name="orgTitle"
+                        id="title"
+                        name="title"
                         autocomplete="organization-title"
                         title="Enter your organizational title"
-                        pattern="[A-Za-z\s\-]{7,}"
+                        pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Manager, CEO"
                     />
                 </label>
 
@@ -110,6 +114,7 @@
                         required
                         autocomplete="tel"
                         title="Enter your mobile phone number"
+                        placeholder="+234........"
                     />
                 </label>
 
@@ -122,13 +127,15 @@
                         required
                         autocomplete="organization"
                         title="Enter your organization's name"
+                        placeholder="Enter Organization's Name"
                     />
                 </label>
 
                 <!-- Membership Level Selection -->
                 <fieldset>
                     <legend>Select Membership Level</legend>
-                    <label>
+                    <label for="membership"
+                        >Membership Level:
                         <input
                             type="radio"
                             name="membershipLevel"
@@ -137,7 +144,7 @@
                         />
                         Non-profit Membership
                     </label>
-                    <label>
+                    <label for="membership">
                         <input
                             type="radio"
                             name="membershipLevel"
@@ -145,7 +152,7 @@
                         />
                         Bronze Membership
                     </label>
-                    <label>
+                    <label for="membership">
                         <input
                             type="radio"
                             name="membershipLevel"
@@ -153,7 +160,7 @@
                         />
                         Silver Membership
                     </label>
-                    <label>
+                    <label for="membership">
                         <input
                             type="radio"
                             name="membershipLevel"
