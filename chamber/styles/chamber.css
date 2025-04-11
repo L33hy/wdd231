@@ -195,3 +195,46 @@ div img {
     color: #fff;
     margin: .3rem;
 }
+
+/* On mall screen */
+@media (max-width: 760px) {
+    .hamburger {
+        display: block;
+        color: #fff;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    .navbar.open ul {
+        display: block;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cta-btn {
+        right: 180px;
+    }
+}
