@@ -21,7 +21,6 @@ body {
 .navbar {
     display: flex;
     height: 5rem;
-    width: 100%;
     background-color: var(--color-primary);
 }
 
@@ -52,7 +51,7 @@ nav {
 }
 
 .nav-links li a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .nav-links li a {
@@ -86,9 +85,96 @@ nav {
 
 }
 
+.hero-section {
+    width: 100%;
+    margin-top: 0;
+}
+
+.hero-section img {
+    justify-content: center;
+    width: 95%;
+    max-width: 1110px; 
+    height: 32rem;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.cta-btn {
+    top: 90%;
+    right: 115px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3e3c3c;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #1fa123;
+    color: #0c0303
+}
+
+.caption {
+    margin: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+.home {
+   background-color: #fff; 
+   color: #000;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
 h2 {
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.event {
+    width: 23rem;
+    height: 20rem;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.members {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
 }
 
 footer {
