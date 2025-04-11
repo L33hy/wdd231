@@ -55,8 +55,9 @@
         </div>
 
         <section class="container">
+            <div>
             <form method="get" action="thankyou.html">
-                <label for="firstName"
+                <label for="firstName" id="firstName"
                     >First Name:
                     <input
                         type="text"
@@ -69,7 +70,7 @@
                     >
                 </label>
 
-                <label for="lastName"
+                <label for="lastName" id="lastName"
                     >Last Name:
                     <input
                         type="text"
@@ -82,7 +83,7 @@
                     >
                 </label>
 
-                <label for="title"
+                <label for="title" id="title"
                     >Organizational Title:
                     <input
                         type="text"
@@ -94,7 +95,7 @@
                     >
                 </label>
 
-                <label for="email"
+                <label for="email" id="email"
                     >Email Address:
                     <input
                         type="email"
@@ -107,7 +108,7 @@
                     >
                 </label>
 
-                <label for="mobile"
+                <label for="mobile" id="mobile"
                     >Mobile Phone Number:
                     <input
                         type="tel"
@@ -120,7 +121,7 @@
                     >
                 </label>
 
-                <label for="organization"
+                <label for="organization" id="organization"
                     >Organization Name:
                     <input
                         type="text"
@@ -136,35 +137,39 @@
                 <!-- Membership Level Selection -->
                 <fieldset>
                     <legend>Select Membership Level</legend>
-                    <label for="membership"
+                    <label for="membershipNP" id="membershipNP"
                         >Membership Level:
                         <input
                             type="radio"
+                            id="membershipNP"
                             name="membershipLevel"
                             value="NP Membership"
                             required
                         >
                         Non-profit Membership
                     </label>
-                    <label for="membership">
+                    <label for="membership" id="membershipRadio1">
                         <input
                             type="radio"
+                            id="membershipRadio1"
                             name="membershipLevel"
                             value="Bronze Membership"
                         >
                         Bronze Membership
                     </label>
-                    <label for="membership">
+                    <label for="membership" id="membershipRadio2">
                         <input
                             type="radio"
+                            id="membershipRadio2"
                             name="membershipLevel"
                             value="Silver Membership"
                         >
                         Silver Membership
                     </label>
-                    <label for="membership">
+                    <label for="membership" id="membershipRadio3">
                         <input
                             type="radio"
+                            id="membershipRadio3"
                             name="membershipLevel"
                             value="Gold Membership"
                         >
@@ -172,7 +177,7 @@
                     </label>
                 </fieldset>
 
-                <label for="orgDescription"
+                <label for="orgDescription" id="orgDescription"
                     >Organization Description:
                     <textarea
                         id="orgDescription"
@@ -185,7 +190,7 @@
 
                 <input type="hidden" value="Submit Application" />
             </form>
-
+            </div>
             <section id="membershipCards">
                 <div class="card">
                     <h3>NP Membership</h3>
