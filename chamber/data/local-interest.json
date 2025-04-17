@@ -3,13 +3,13 @@
         "name": "Chukker Polo Resort",
         "address": "Yakowa Road, Kaduna",
         "description": "A prestigious polo club offering tournaments and recreational facilities.",
-        "photo": "chukker-polo"
+        "photo": "polo-club"
     },
     {
         "name": "Emir of Zauzau Palace",
         "address": "Zaria, Kaduna State",
         "description": "The historical residence of the Emir of Zauzau, showcasing traditional architecture.",
-        "photo": "emir-zauzau"
+        "photo": "emir_of_zauzau"
     },
     {
         "name": "Matsirga Waterfalls",

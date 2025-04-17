@@ -1,4 +1,8 @@
 /* discover.css */
+.hamburger-button {
+	display: none;
+}
+
 .discover-layout {
     display: flex;
     flex-direction: column; /* Stack sidebar and gallery on small screens */
@@ -8,8 +12,14 @@
 
 .sidebar {
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
     margin-bottom: 20px;
+}
+
+#visit-message {
+	font-size: 1.6rem !important;
+	font-weight: 600;
+	padding-bottom: 1rem;
 }
 
 .sidebar-content {
@@ -26,22 +36,28 @@
 }
 
 .sidebar-card h2 {
-    color: var(--color-primary);
+	background-color: #f9f9f9;
+	color: #000;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: left;
 }
 
+.sidebar-card p {
+	text-align: left;
+}
+
 .sidebar-card ul {
     list-style-type: disc;
-    margin-left: 20px;
+    text-align: left;
 }
 
 .photo-gallery {
     display: grid;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 .photo-gallery figure {
@@ -59,16 +75,22 @@
 .photo-gallery figure img {
     width: 100%;
     height: auto;
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 380px;
+    max-height: 320px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out; /* For hover effect */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* For hover effect */
+}
+
+.photo-gallery figure img:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
 }
 
 .photo-gallery figure h2 {
-    color: var(--color-tertiary);
+	background-color: var(--color-secondary);
+	color: #000;
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.5em;
@@ -100,19 +122,22 @@
     background-color: #4a3636;
 }
 
-/* Grid Layout for Small Screens (320px - 640px) */
+/* Remove hover effect on small screens */
+@media screen and (max-width: 640px) {
+    .photo-gallery figure img:hover {
+        transform: none;
+    }
+}
+
+/* Grid Layout for Small Screens (320px - 640px) - Adjusted for 2 columns */
 @media screen and (min-width: 320px) and (max-width: 640px) {
     .photo-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4"
-            "item5"
-            "item6"
-            "item7"
-            "item8";
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
     }
     .photo-gallery figure:nth-child(1) { grid-area: item1; }
     .photo-gallery figure:nth-child(2) { grid-area: item2; }
@@ -137,21 +162,8 @@
     }
     .photo-gallery {
         width: 65%;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-areas:
-            "item1 item2"
-            "item3 item4"
-            "item5 item6"
-            "item7 item8";
+        grid-template-columns: repeat(2, 1fr);
     }
-    .photo-gallery figure:nth-child(1) { grid-area: item1; }
-    .photo-gallery figure:nth-child(2) { grid-area: item2; }
-    .photo-gallery figure:nth-child(3) { grid-area: item3; }
-    .photo-gallery figure:nth-child(4) { grid-area: item4; }
-    .photo-gallery figure:nth-child(5) { grid-area: item5; }
-    .photo-gallery figure:nth-child(6) { grid-area: item6; }
-    .photo-gallery figure:nth-child(7) { grid-area: item7; }
-    .photo-gallery figure:nth-child(8) { grid-area: item8; }
 }
 
 /* Grid Layout for Large Screens (1025px and above) */
@@ -168,22 +180,14 @@
     }
     .photo-gallery {
         width: 70%;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-areas:
-            "item1 item2 item3 item4"
-            "item5 item6 item7 item8";
+        grid-template-columns: repeat(2, 1fr);
     }
-    .photo-gallery figure:nth-child(1) { grid-area: item1; }
-    .photo-gallery figure:nth-child(2) { grid-area: item2; }
-    .photo-gallery figure:nth-child(3) { grid-area: item3; }
-    .photo-gallery figure:nth-child(4) { grid-area: item4; }
-    .photo-gallery figure:nth-child(5) { grid-area: item5; }
-    .photo-gallery figure:nth-child(6) { grid-area: item6; }
-    .photo-gallery figure:nth-child(7) { grid-area: item7; }
-    .photo-gallery figure:nth-child(8) { grid-area: item8; }
 
-    /* Hover effect on images for larger screens */
-    .photo-gallery figure:hover img {
-        transform: scale(1.05);
-    }
+	@media (hover: none) {
+		.photo-gallery figure img:hover {
+			transform: none;
+			opacity: 1;
+		}
+	}
 }
+

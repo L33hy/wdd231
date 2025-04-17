@@ -1,7 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const navLinks = document.querySelector('.nav-links');
     const visitMessageDiv = document.getElementById('visit-message');
     const gallery = document.querySelector('.photo-gallery');
      
+    // Responsive Navigation
+    hamburgerButton.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+        });
+    });
+    
     // Last Visit Logic
     const lastVisitTime = localStorage.getItem('lastVisit');
     const currentTime = Date.now();
@@ -46,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>${item.name}</h2>
                 <address>${item.address}</address>
                 <p>${item.description}</p>
-                <button>Learn More</button>
             `;
             gallery.appendChild(card);
         });
