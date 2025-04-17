@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const weatherContainer = document.getElementById('weather-container');
     const apiKey = '278286a1cca556be7de32b0aa2f565ea'; // Replace with your actual API key
-    const city = 'Abuja'; // You can make this dynamic based on user location
+    const city = 'Kaduna'; // You can make this dynamic based on user location
 
     // Responsive Navigation
     hamburgerButton.addEventListener('click', () => {

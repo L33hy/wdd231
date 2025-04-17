@@ -1,4 +1,3 @@
-
 [
     {
       "id": 1,
@@ -105,4 +104,4 @@
       "image": "./images/shallow-woman.webp",
       "details": ["Agents and distributors", "Transportation providers", "Storage facilities", "Market intelligence"]
     }
-  ]
+]
