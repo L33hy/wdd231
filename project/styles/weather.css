@@ -1,0 +1,53 @@
+h2 {
+    text-align: center;
+}
+
+#weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the grid items */
+}
+
+.weather-card {
+    background-color: #dedede;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; /* Center content within the card */
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.weather-card .temperature {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.weather-card .description {
+    color: #777;
+    font-size: 1em;
+}
+
+body {
+    font-family: sans-serif;
+    /* display: flex; */
+    justify-content: center; /* Center the entire container */
+    align-items: center; /* Center vertically */
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Light background color */
+    margin: 0;
+}

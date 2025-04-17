@@ -3,87 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Course Home Page by Lehi Ita Daniel, Frontend Web Development, Html, CSS, JavaScript" />
-    <meta name="author" content="Lehi Ita Daniel" />
+    <meta name="description" content="Etakings: Your trusted partner for agricultural logistics, import, and export solutions worldwide.">
+    <meta name="author" content="Lehi Ita Daniel">
+    <meta property="og:title" content="Etakings - Agricultural Logistics, Import & Export">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/etakings-logo.webp">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/project/index.html">
 
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/small.css" />
-    <link rel="stylesheet" href="./styles/larger.css" />
+    <link rel="icon" href="./images/etakings-favicon.webp" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <title>Course Home Page</title>
-
-    <script src="./scripts/course.js" defer></script>
-    <script src="./scripts/date.js" defer></script>
+    <title>Etakings - Empowering Global Agriculture, Logistics, Import and Export</title>
 </head>
 <body>
     <header>
-        <div class="nav-bar">
-            <img src="./images/profile_photo.jpg" alt="Profile Photo">
-            <span class="name-head">Lehi Ita Daniel's</span>
+        <div class="logo">
+            <img src="./images/etakings-logo.webp" alt="Etakings Logo" loading="lazy" width="60">
+            <h1>Etakings</h1>
         </div>
-        <nav class="nav">
-            <button id="hamburger">&#9776;</button>
-            <ul id="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/lehi-daniel/">LinkedIn</a></li>
+        <nav class="responsive-nav">
+            <button class="hamburger-button" aria-label="Toggle Navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./current-weather.html">Weather</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1 class="home">Home</h1>
-        <div class="card-content">
-            <section class="cards card-1">
-                <h2 class="course-work">Course Work</h2>
-                <div class="list-style">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Empowering Global Agriculture</h1>
+                <p>Seamless logistics, efficient import and export for your agricultural commodities.</p>
+                <a href="./service.html" class="cta-button">Explore Our Services</a>
+            </div>
+            <img src="./images/agric-solution.webp" alt="Agricultural Landscape" loading="lazy" width="600">
+        </section>
 
-            <section class="cards card-2">
-                <h2 class="course-work">Kaduna, Nigeria</h2>
-                <div class="country-card">
-                    <div class="card-photo">
-                        <img src="./images/kaduna-state.jpg" alt="A City in Kaduna State">
-                    </div>
-                    <figcaption>Kaduna State</figcaption>
+        <section class="features">
+            <h2>Our Expertise</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="./images/logistics-mgt.webp" alt="Logistics" loading="lazy" width="330">
+                    <h3>Efficient Logistics</h3>
+                    <p>Optimized transportation and warehousing solutions.</p>
                 </div>
-            </section>
+                <div class="feature-item">
+                    <img src="./images/export.webp" alt="Import" loading="lazy" width="330">
+                    <h3>Global Import</h3>
+                    <p>Sourcing and importing agricultural products worldwide.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="./images/com-sourcing.webp" alt="Export" loading="lazy" width="330">
+                    <h3>Worldwide Export</h3>
+                    <p>Expanding your reach to international markets.</p>
+                </div>
+            </div>
+        </section>
 
-            <section class="cards card-3">
-                <h2 class="card-title">Web and Computer Programming Certificate</h2>
-                <div class="cert">
-                    <div class="course">
-                        <div class="tip all-courses">All</div>
-                        <div class="tip cse-courses">CSE</div>
-                        <div class="tip wdd-courses">WDD</div>
-                    </div>
+        <section class="testimonials">
+            <h2>Client Testimonials</h2>
+            <div id="testimonial-container">
                 </div>
-                <hr>
-                <p class="course-note">Total number of courses 12, each course should be 2 credits, making it a total of 24 credits.</p>
-                <div class="course-2">
-                    <div class="all">CSE 110</div>
-                    <div class="all">WDD 130</div>
-                    <div class="all">CSE 111</div>
-                    <div class="all color">CSE 210</div>
-                    <div class="all">WDD 131</div>
-                    <div class="all color">WDD 231</div>
-                </div>
-            </section>
+        </section>
+
+        <div id="attributionModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="attributionModalTitle">Image Attributions</h3>
+                <ul>
+                    <li>Hero Image: https://www.freepik.com/search?format=search&last_filter=query&last_value=Agricultural+images&query=Agricultural+images</li>
+                    <li>Logistics Icon: https://www.flaticon.com/free-icons/best</li>
+                    <li>Import Icon: https://www.flaticon.com/free-icons/best</li>
+                    <li>Logo Image: https://www.canva.com/</li>
+                </ul>
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>&copy;<span id="currentyear"></span> Lehi Ita Daniel's. Nigeria</p>
-        <p id="lastmodified" class="aside"></p>
+        <p>&copy; 2025 Etakings. 🌺 Lehi Ita Daniel 🌺 All rights reserved.</p>
+        <p><a href="#" id="attributionLink">Attributions</a></p>
     </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

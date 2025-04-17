@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #333;
+    color: #fff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -20,10 +21,12 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .logo img {
     margin-right: 1rem;
+    height: auto;
 }
 
 nav ul {
@@ -31,6 +34,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 10px;
 }
 
 nav ul li {
@@ -39,12 +43,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffff;
     font-weight: bold;
+    padding: .7rem;
+    
 }
 
 nav ul li a.active {
-    color: #007bff;
+    color: #c5ec7e;
+}
+
+nav ul li a:hover {
+    background-color: #adaeb3;
+    border-radius: 5px;
 }
 
 .hamburger-button {
@@ -71,7 +82,7 @@ main {
 
 .hero h1 {
     font-size: 2.5rem;
-    color: #28a745;
+    color: #045316;
     margin-bottom: 1rem;
 }
 
@@ -82,7 +93,7 @@ main {
 
 .cta-button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #0b4a8e;
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -99,6 +110,7 @@ main {
     flex: 1;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
 .features {
@@ -123,6 +135,7 @@ main {
 
 .feature-item img {
     border-radius: 5px;
+    height: auto;
 }
 
 .testimonials {
@@ -152,7 +165,7 @@ main {
 
 .testimonial blockquote {
     font-style: italic;
-    color: #555;
+    color: #4f4a4a;
     margin-bottom: 1rem;
     font-size: 1.1rem;
     border-left: 3px solid #28a745;
@@ -162,7 +175,7 @@ main {
 
 .testimonial .author {
     font-size: 0.9rem;
-    color: #777;
+    color: #645e5e;
     text-align: right;
     overflow-wrap: break-word; /* Ensure long author names wrap */
 }
@@ -216,8 +229,8 @@ main {
 .service-item .learn-more-button {
     /* Style your button */
     display: inline-block;
-    background-color: #007bff; /* Example color */
-    color: white;
+    background-color: #005bbd; /* Example color */
+    color: #ffff;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -228,7 +241,7 @@ main {
 }
 
 .service-item .learn-more-button:hover {
-    background-color: #0056b3; /* Darker hover color */
+    background-color: #194676; /* Darker hover color */
 }
 
 .contact-form form {
@@ -276,10 +289,14 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
-    color: white;
+    color: #fff;
     font-size: 0.9rem;
     position: relative;
     bottom: 0;
+}
+
+a#attributionLink {
+    color: #fff;
 }
 
 /* Responsive adjustments for testimonials */
