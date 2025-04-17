@@ -1,8 +1,4 @@
 /* discover.css */
-.hamburger-button {
-	display: none;
-}
-
 .discover-layout {
     display: flex;
     flex-direction: column; /* Stack sidebar and gallery on small screens */
