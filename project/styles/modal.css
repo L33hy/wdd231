@@ -1,0 +1,99 @@
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInModal 0.4s ease-out;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    line-height: 1;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for modal content */
+.modal-content h3 {
+    color: #28a745;
+    margin-top: 0;
+    text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.modal-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+    padding-bottom: 0.3rem;
+}
+
+.modal-content ul {
+  list-style: disc;
+  padding-left: 10px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.modal-content ul li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+  
+/* Responsive adjustments for the modal */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    margin-top: 15%;
+  }
+}

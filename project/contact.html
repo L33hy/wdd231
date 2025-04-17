@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Etakings for inquiries about our agricultural logistics, import, and export services.">
+    <meta name="author" content="Lehi Ita Daniel">
+    <meta property="og:title" content="Contact Us - Etakings">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/etakings-logo.webp">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/project/contact.html">
+
+    <link rel="icon" href="./images/etakings-favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <script type="module" src="./scripts/contact.js" defer></script>
+
+    <title>Contact Us - Etakings</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/etakings-logo.webp" alt="Etakings Logo" loading="lazy" width="60" height="auto">
+            <h1>Etakings</h1>
+        </div>
+        <nav class="responsive-nav">
+            <button class="hamburger-button" aria-label="Toggle Navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you. Please fill out the form below.</p>
+        </section>
+
+        <section class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-data-display" class="hidden">
+                <h2>Submitted Information:</h2>
+                <div id="data-output"></div>
+                <button id="go-back">Go Back to Form</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Etakings. 🌺 Lehi Ita Daniel 🌺 All rights reserved.</p>
+        <p><a href="#" id="attributionLink">Attributions</a></p>
+    </footer>
+</body>
+</html>

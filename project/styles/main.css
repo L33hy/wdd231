@@ -1,0 +1,297 @@
+/* Base styles for the Etakings website */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #007bff;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero img {
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    border-radius: 5px;
+}
+
+.testimonials {
+    padding: 3rem 0;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing testimonials */
+}
+
+#testimonial-container {
+    display: flex; /* Arrange testimonials in a row */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: scrollTestimonials 30s linear infinite alternate; /* Adjust duration as needed */
+  padding: 1rem 0; /* Add some vertical padding */
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 0 1.5rem; /* Spacing between testimonials */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 80%; /* Adjust width of each testimonial */
+    max-width: 500px; /* Maximum width */
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-left: 3px solid #28a745;
+    padding-left: 1rem;
+    overflow-wrap: break-word;
+}
+
+.testimonial .author {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: right;
+    overflow-wrap: break-word; /* Ensure long author names wrap */
+}
+
+/* Animation for scrolling */
+@keyframes scrollTestimonials {
+    0% { transform: translateX(calc(100% + 1.5rem)); } /* Start off-screen to the right */
+    100% { transform: translateX(calc(-100% - 1.5rem)); } /* End off-screen to the left */
+}
+
+.page-title {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content */
+    margin-bottom: 1rem;
+}
+
+.service-item img {
+    max-width: 100%; /* Ensure image fits */
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.service-item .service-description-hidden,
+.service-item .service-details-hidden {
+  display: none; /* Hide description, H4, and UL by default */
+}
+
+.service-item .learn-more-button {
+    /* Style your button */
+    display: inline-block;
+    background-color: #007bff; /* Example color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.service-item .learn-more-button:hover {
+    background-color: #0056b3; /* Darker hover color */
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive adjustments for testimonials */
+@media (max-width: 768px) {
+    .testimonial {
+      width: 95%;
+      margin: 0 0.5rem;
+      padding: 1rem;
+    }
+
+    @keyframes scrollTestimonials {
+      0% { transform: translateX(calc(100% + 0.5rem)); }
+        100% { transform: translateX(calc(-100% - 0.5rem)); }
+    }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Chukker Polo Resort",
+        "address": "Yakowa Road, Kaduna",
+        "description": "A prestigious polo club offering tournaments and recreational facilities.",
+        "photo": "chukker-polo"
+    },
+    {
+        "name": "Emir of Zauzau Palace",
+        "address": "Zaria, Kaduna State",
+        "description": "The historical residence of the Emir of Zauzau, showcasing traditional architecture.",
+        "photo": "emir-zauzau"
+    },
+    {
+        "name": "Matsirga Waterfalls",
+        "address": "Kafanchan, Kaduna State",
+        "description": "A beautiful waterfall cascading down rocky cliffs, a popular natural attraction.",
+        "photo": "matsirga-falls"
+    },
+    {
+        "name": "Kaduna National Museum",
+        "address": "Ali Akilu Road, Kaduna",
+        "description": "Home to a collection of archaeological and ethnographic artifacts representing Nigerian history and culture.",
+        "photo": "kaduna-museum"
+    },
+    {
+        "name": "Kajuru Castle",
+        "address": "Kajuru Local Government Area, Kaduna",
+        "description": "An early medieval-style villa built by a German expatriate, offering unique architecture and scenic views.",
+        "photo": "kajuru-castle"
+    },
+    {
+        "name": "Kagoro Hills",
+        "address": "Kagoro Town, Kaura LGA, Kaduna State",
+        "description": "A range of hills known for their stunning landscapes, hiking trails, and cultural significance to the local people.",
+        "photo": "kagoro-hill"
+    },
+    {
+        "name": "Lord Lugard's House",
+        "address": "Lokoja Road, Kaduna",
+        "description": "A colonial-era building that served as the residence of Nigeria's first Governor-General, now a historical landmark.",
+        "photo": "lord-lugard-house"
+    },
+    {
+        "name": "Murtala Mohammed Square",
+        "address": "Independence Way, Kaduna",
+        "description": "A major public square in Kaduna, often used for events, gatherings, and recreational activities.",
+        "photo": "murtala-square"
+    }
+]

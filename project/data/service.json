@@ -1,0 +1,108 @@
+
+[
+    {
+      "id": 1,
+      "name": "Commodity Sourcing",
+      "description": "Global sourcing of high-quality agricultural commodities.",
+      "image": "./images/com-sourcing.webp",
+      "details": ["Extensive network", "Quality assurance", "Competitive pricing", "Timely delivery"]
+    },
+    {
+      "id": 2,
+      "name": "Logistics Management",
+      "description": "End-to-end logistics solutions tailored to agricultural products.",
+      "image": "./images/custom-broker.webp",
+      "details": ["Transportation", "Warehousing", "Inventory management", "Customs clearance"]
+    },
+    {
+      "id": 3,
+      "name": "Importation Services",
+      "description": "Efficient and compliant import processes for agricultural goods.",
+      "image": "./images/women-shaking.webp",
+      "details": ["Documentation handling", "Regulatory compliance", "Tariff management", "Risk assessment"]
+    },
+    {
+      "id": 4,
+      "name": "Exportation Services",
+      "description": "Expanding your market reach with our expert export solutions.",
+      "image": "./images/global-import.webp",
+      "details": ["Market analysis", "International regulations", "Shipping coordination", "Payment processing"]
+    },
+    {
+      "id": 5,
+      "name": "Supply Chain Optimization",
+      "description": "Improving efficiency and reducing costs in your agricultural supply chain.",
+      "image": "./images/importation.webp",
+      "details": ["Process analysis", "Technology integration", "Sustainability focus", "Performance monitoring"]
+    },
+    {
+      "id": 6,
+      "name": "Cold Chain Logistics",
+      "description": "Specialized handling and transportation for temperature-sensitive goods.",
+      "image": "./images/inspection.webp",
+      "details": ["Refrigerated transport", "Temperature monitoring", "Cold storage", "Quality control"]
+    },
+    {
+      "id": 7,
+      "name": "Customs Brokerage",
+      "description": "Expert assistance with customs procedures and documentation.",
+      "image": "./images/landscape.webp",
+      "details": ["Classification", "Valuation", "Compliance", "Duty management"]
+    },
+    {
+      "id": 8,
+      "name": "Market Entry Consulting",
+      "description": "Guidance and support for entering new international agricultural markets.",
+      "image": "./images/training.webp",
+      "details": ["Market research", "Partner identification", "Regulatory advice", "Cultural adaptation"]
+    },
+    {
+      "id": 9,
+      "name": "Risk Management",
+      "description": "Strategies to mitigate risks in agricultural trade and logistics.",
+      "image": "./images/logistics.webp",
+      "details": ["Insurance solutions", "Hedging strategies", "Contingency planning", "Dispute resolution"]
+    },
+    {
+      "id": 10,
+      "name": "Agricultural Financing",
+      "description": "Access to financial solutions to support your agricultural operations.",
+      "image": "./images/animal-farm.webp",
+      "details": ["Trade finance", "Working capital loans", "Investment opportunities", "Financial consulting"]
+    },
+    {
+      "id": 11,
+      "name": "Quality Inspection",
+      "description": "Ensuring the quality and safety of your agricultural products.",
+      "image": "./images/tech-integ.webp",
+      "details": ["Pre-shipment inspection", "Sampling", "Laboratory analysis", "Certification"]
+    },
+    {
+      "id": 12,
+      "name": "Sustainable Agriculture Solutions",
+      "description": "Promoting environmentally and economically sustainable practices.",
+      "image": "./images/risk-manage.webp",
+      "details": ["Eco-friendly logistics", "Carbon footprint reduction", "Organic certification support", "Resource optimization"]
+    },
+    {
+      "id": 13,
+      "name": "Technology Integration",
+      "description": "Leveraging technology to enhance efficiency and transparency.",
+      "image": "./images/chicken-farm.webp",
+      "details": ["Tracking systems", "Data analytics", "E-commerce platforms", "Automation solutions"]
+    },
+    {
+      "id": 14,
+      "name": "Training and Education",
+      "description": "Workshops and training programs for agricultural businesses.",
+      "image": "./images/female-driver.webp",
+      "details": ["Logistics best practices", "International trade regulations", "Supply chain management", "Risk mitigation"]
+    },
+    {
+      "id": 15,
+      "name": "Global Network Access",
+      "description": "Benefit from our extensive network of partners and resources worldwide.",
+      "image": "./images/shallow-woman.webp",
+      "details": ["Agents and distributors", "Transportation providers", "Storage facilities", "Market intelligence"]
+    }
+  ]
